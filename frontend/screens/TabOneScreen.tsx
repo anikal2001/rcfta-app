@@ -7,8 +7,14 @@ import { Text, View } from '../components/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <View style={styles.card}>
+        <Text style={styles.title}>Card Title</Text>
+        { <View style={styles.cardRow}> 
+          <View style={styles.cardLeft}> </View>
+          <Text style={styles.cardRight}>Content of the Card</Text>
+        </View>}
+      </View>
+
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
   );
@@ -21,12 +27,27 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 70,
     fontWeight: 'bold',
+    textDecorationLine: 'underline',
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  card: {
+    backgroundColor: '#30D5C8',
+    padding: 75,
+  },
+  cardRow: {
+    backgroundColor: '#30D5C8',
+    flexDirection: 'row',
+    gap: '30px',
+  },
+  cardLeft: {
+    backgroundColor: 'red',
+    borderRadius: 100,
+    width: '200px',
+    height: '200px'
+  },
+  cardRight: {
+    fontSize: 30,
+    fontFamily: "timesNewRoman"
   },
 });
