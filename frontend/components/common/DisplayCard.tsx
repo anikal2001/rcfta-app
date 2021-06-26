@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Image } from "react-native";
 
 import { Text, View } from "../../components/Themed";
 
@@ -35,7 +35,7 @@ const card = () => {
       <Text style={styles.title}>Card Title</Text>
       <View style={styles.cardRow}>
         <Text style={styles.cardRight}>Content of the Card</Text>
-        {/* <Image src={require('../assets/images/favicon.png')}/>   */}
+        <Image source={require("../assets/images/favicon.png")} />
       </View>
     </View>
   );
