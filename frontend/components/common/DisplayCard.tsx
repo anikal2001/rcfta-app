@@ -29,16 +29,14 @@ const styles = StyleSheet.create({
   },
 });
 
-const card = () => {
-  return (
-    <View style={styles.card}>
-      <Text style={styles.title}>Card Title</Text>
-      <View style={styles.cardRow}>
-        <Text style={styles.cardRight}>Content of the Card</Text>
-        <Image source={require("../assets/images/favicon.png")} />
-      </View>
+const card = () => (
+  <View style={styles.card}>
+    <Text style={styles.title}>Card Title</Text>
+    <View style={styles.cardRow}>
+      <Text style={styles.cardRight}>Content of the Card</Text>
+      <Image source={require("../../assets/images/favicon.png")} />
     </View>
-  );
-};
+  </View>
+);
 
 export default card;
