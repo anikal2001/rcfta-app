@@ -9,6 +9,7 @@ import queryClient from "./react-query/queryClient";
 import useCachedResources from "./hooks/useCachedResources";
 import useColorScheme from "./hooks/useColorScheme";
 import Navigation from "./navigation";
+import { NativeBaseProvider, Box } from "native-base";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
@@ -20,10 +21,12 @@ export default function App() {
     return (
       <QueryClientProvider client={queryClient}>
         <Hydrate>
-          <SafeAreaProvider>
-            <Navigation colorScheme={colorScheme} />
-            <StatusBar />
-          </SafeAreaProvider>
+          <NativeBaseProvider>
+            <SafeAreaProvider>
+              <Navigation colorScheme={colorScheme} />
+              <StatusBar />
+            </SafeAreaProvider>
+          </NativeBaseProvider>
         </Hydrate>
       </QueryClientProvider>
     );
