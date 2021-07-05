@@ -3,7 +3,11 @@
     "target": "es6",
     "incremental": true,
     "tsBuildInfoFile": ".next/cache/tsconfig.tsbuildinfo",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
@@ -17,9 +21,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "."
   },
-  "exclude": ["node_modules"],
-  "$schema": "https://json.schemastore.org/tsconfig"
+  "exclude": [
+    "node_modules"
+  ],
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "expo/tsconfig.base"
 }
-
