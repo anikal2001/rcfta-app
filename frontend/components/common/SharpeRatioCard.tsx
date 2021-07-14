@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StyleSheet, Image } from "react-native";
 
-import { Text, View } from "../../components/Themed";
+import { Text, View } from "../Themed";
 
 const styles = StyleSheet.create({
   title: {
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
 const card = () => {
   return (
     <View style={styles.card}>
-      <Text style={styles.title}>CASH</Text>
+      <Text style={styles.title}>SHARPE RATIO</Text>
       <View style={styles.cardRow}>
-        <Text style={styles.cardRight}>$2,024,786.54</Text>
+        <Text style={styles.cardRight}>-$733,836.04</Text>
         {/* <Image source={require("../assets/images/favicon.png")} /> */}
       </View>
     </View>
