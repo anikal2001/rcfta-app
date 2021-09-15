@@ -16,4 +16,14 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
   },
+  darkInput: {
+    background: '#333232',
+    text: "#fff",
+    placeholderColor: "#858484"
+  },
+  lightInput: {
+    background: '#333232',
+    text: "#000",
+    placeholderColor: "#858484"
+  }
 };
