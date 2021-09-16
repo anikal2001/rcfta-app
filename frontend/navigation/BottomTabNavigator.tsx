@@ -43,15 +43,6 @@ export default function BottomTabNavigator() {
           ),
         }}
       />
-      {/* <BottomTab.Screen
-        name="Login"
-        component={LoginScreen}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
-          ),
-        }}
-      /> */}
     </BottomTab.Navigator>
   );
 }
@@ -74,7 +65,7 @@ function TabOneNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="TabOneScreen"
-        component={TabOneScreen}
+        component={TabOneScreen} //TabOneScreen
         options={{ headerTitle: "Tab One Title" }}
       />
     </TabOneStack.Navigator>
